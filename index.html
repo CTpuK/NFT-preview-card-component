@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>NFT preview card component</title>
 </head>
+
 <body>
 
-  Equilibrium #3429
+  <section class="card card_position">
 
-  Our Equilibrium collection promotes balance and calm.
+    <a class="card__hoverGB" href="#">
+      <img src="images/image-equilibrium.jpg" alt="A glass cube stands on the edge in equilibrium" class="card__img">
+    </a>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+    <a href="#" class="card__heading__link">Equilibrium #3429</a>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="card__description">Our Equilibrium collection promotes balance and calm.</div>
+
+    <div class="card__offer">
+
+      <div class="card__pricing">
+        <img src="images/icon-ethereum.svg" alt="Ethereum icon" class="card__icon">
+        <p class="card__offer__price">0.041 ETH</p>
+      </div>
+
+      <div class="card__time-left">
+        <img src="images/icon-clock.svg" alt="Clock icon" class="card__icon">
+        <p class="card__offer__time-left">3 days left</p>
+      </div>
+    </div>
+
+    <div class="card__author">
+      <img src="images/image-avatar.png" alt="Author Jules Wyvern" class="card__author__icon">
+      <span class="card__author__text">Creation of <a href="#" class="card__author__link">Jules Wyvern</a></span>
+    </div>
+
+  </section>
 </body>
+
 </html>
